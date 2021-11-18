@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class damageReciever : MonoBehaviour
 {
-	public int totatlHealth;
+	public int totatlHealth = 10;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +21,7 @@ public class damageReciever : MonoBehaviour
 	
 	void OnCollisionEnter(Collision collision) 
 	{
-		print(collision);
+		totatlHealth -= 1;
+		print("collision");
 	}
 }
