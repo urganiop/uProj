@@ -6,7 +6,7 @@ public class puddleStats : MonoBehaviour
 {
     public List<string> LujaTypes;
     [SerializeField] private string _type;
-    public lavaPuddle lava;
+    // public lavaPuddle lava;
     public string Type => _type;
     
 
